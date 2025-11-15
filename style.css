@@ -1,0 +1,79 @@
+
+/* --- Basic Reset and Styling --- */
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #5a60ff, #4cd3ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.calculator {
+  background: #1e1e2f;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 320px;
+}
+
+.display {
+  background: #2d2d44;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  text-align: right;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: #3b3b5c;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #57577d;
+}
+
+.operator {
+  background: #ff9f43;
+}
+.operator:hover {
+  background: #ffb866;
+}
+
+.equal {
+  background: #28c76f;
+  grid-column: span 2;
+}
+.equal:hover {
+  background: #42d885;
+}
+
+.clear {
+  background: #ea5455;
+  grid-column: span 2;
+}
+.clear:hover {
+  background: #f07171;
+}
